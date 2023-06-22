@@ -12,4 +12,10 @@ public class HelloController {
     public String hello() {
         return "안녕하세요~~~";
     }
+
+    @GetMapping("/api/hello2")
+    @ResponseBody
+    public String heelo2() {
+        return "jenkins 자동 빌드 배포 테스트";
+    }
 }
